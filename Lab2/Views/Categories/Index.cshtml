@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Categories</h2>
+
+<ul>
+    <li>@Html.ActionLink("Food", "Details", new { CategoryName = "Food" })</li>
+    <li>@Html.ActionLink("Tech", "Details", new { CategoryName = "Tech" })</li>
+    <li>@Html.ActionLink("Sports", "Details", new { CategoryName = "Sports" })</li>
+</ul>
